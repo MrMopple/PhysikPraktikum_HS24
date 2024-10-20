@@ -20,7 +20,7 @@
 
 %--- Title Information ----------------------------------------------
 \title{\textbf{S-Couppled Oscillations} \\
-	\normalsize{Date of the experiment: DATE}} %Fill in the name of the experiment and the day it was performed
+	\normalsize{Date of the experiment: October 23, 2024}} %Fill in the name of the experiment and the day it was performed
 \date{\today}  %Date the report was written
 \author{\normalsize{Kubik, David - email address} \\ %your name and email address
 	    \normalsize{Assistant: NAME}} % Name of the assistant
@@ -32,86 +32,33 @@
 \maketitle
 
 
-\section*{Introduction} %what we want to measure
-
-In the introduction, there should be a mention of the goals of the experiment, what is to be measured, and if possible, a motivation for the measurement. 
-
-The introduction is where you should introduce useful concepts needed to understand the experiment. This can include definitions of physical concepts, instruments, mathematical method, etc. Please give all your references, either in the text, or at the end of the report.
-
-This is also where you should introduce useful equations you will use in your calculation. \textbf{Always number your equations}, and \textbf{describe the variables}:
-\begin{equation} \label{eq:idealgas}
-	P V = n R T	
-\end{equation}
-where $P$ is the pressure in Pascal, $T$ is the temperature in Kelvin. $V=(1.000 \pm 0.001) \, \si{m^3}$ 
-is the volume, $n = (1.0 \pm 0.1) \, \si{mol}$ the number of atoms and 
-$R = (8.3144621 \pm 7.5\cdot10^{-6}) \, \si{J.mol^{-1}.K^{-1}}$ \cite{nist} is the noble gas constant. That way, you can refer to them easily later in the report (as eq. \ref{eq:idealgas}, eq. \ref{eq:errorcalc}, etc.), making it easier for the reader to know what equation you used and why.
-
-The introduction should give an overview of the experiment and should not be too long.
+\section{Introduction}
 
 
-\section*{Experimental setup} %how we measure: experiments
-
-In this section, we should find a description of the experimental setup/apparatus used.
-You can integrate it in the introduction or make a separate section. You can include pictures or drawings
-that help the reader understand what is needed to perform the experiment. Always introduce the figure in the
-text. For example: ``Figure \ref{fig:setup} presents the principal components used to write this report.''
-
-\begin{figure}[!h]
-\centering
-        \includegraphics[width=0.3\textwidth]{f/setup}
-         \caption{Computer used to write this report. 1) Monitor; 2) Computer; 3) Keyboard; 4) Mouse} 
-\label{fig:setup}
-\end{figure}
 
 
-\section*{Measurement protocol} %how we acquire data and analyze it
-
-This section, along with the Discussion, is the bulk of the report. Here we should find a list of constants used (with uncertainties). You should state in detail the conditions in which you made the measurements. Was there anything that could influence the experiment? Who made the measurement? How?
-
-You should present your measurements in a comprehensive table (table \ref{tbl:sampleT}), \textbf{with all units and uncertainties}:
+\section{Experimental setup} \label{sec:ex}
 
 
-The data should be always be present somewhere in the report.
 
-You can also show the results in a figure (graph, histogram, etc.). Note that a figure should always make the results clearer, easier to understand.
-
-In a figure, we should always find: 
-\begin{itemize}
-\item \textbf{Axes labels and units}
-\item \textbf{Uncertainties (error bars)}
-\item \textbf{Plot area should be as large as possible}
-\end{itemize}
+\section{Measurement protocol} %how we acquire data and analyze it
 
 
-\section*{Discussion} %Analysis
-
-In this section, we should find all your calculation. For example, to calculate the pressure as a function of time, we should find an example of calculation with a reference to eq. \ref{eq:idealgas}:
-
-\emph{From eq. \ref{eq:idealgas}, we get:}
-\begin{equation*}
-\begin{aligned}
-P =& \frac{\SI{1.0}{mol} \cdot 8.3144621 \cdot \SI{300.0}{K}}{\SI{1.000}{m^3}} \\
-P =& \SI{249.3}{Pa} \approx \SI{2.5e3}{Pa} 
-\end{aligned}
-\end{equation*}
-
-If you must make this calculation 20 times, \textbf{do not} copy it 20 time with all values.
-We only need \textbf{one} example.
-
-\textbf{You should also always make an error calculation (see eq. \ref{eq:errorcalc}).}
-\begin{equation}\label{eq:errorcalc}
-\frac{\Delta P}{P}= \sqrt{\qty(\frac{\Delta n}{n})^2+\qty(\frac{\Delta R}{R})^2 + \qty(\frac{\Delta T}{T})^2 + \qty(\frac{\Delta V}{V})^2}
-\end{equation}
+\section{Discussion} %Analysis
 
 
-\section*{Conclusion}
 
-The function of the conclusion is to summarise the experiment. You should remind the reader of the goal of the experiment, the method used in your investigation, and state if the goal was achieved. If you had set out to measure a single parameter (e.g. the charge of the electron) you should rewrite your result here and compare it to the value in the literature. Also, interpret your result by comparing it to the uncertainty of the measurement. (Hint: this might be easier to do with the relative uncertainty, in percentage) Is your measurement precise?
 
-Finally, you should mention what potential sources of error could have influenced your result. You should also give potential improvements that could be made in the future to get a better, more precise results.
+
+
+\section{Conclusion}
+
 
 
 \begin{thebibliography}{9}%This section is optional if you decide to put your references directly in the text.
+
+
+
 
 \bibitem{nist}
   \emph{The NIST Reference on Constants, Units, and Uncertainty},
